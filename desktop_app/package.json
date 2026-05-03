@@ -1,0 +1,20 @@
+{
+  "name": "daily-life-organizer-desktop",
+  "version": "1.0.0",
+  "description": "Desktop application for organizing daily life",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": ["organizer", "productivity", "desktop"],
+  "author": "Daily Organizer Team",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^21.0.0",
+    "electron-builder": "^23.3.3"
+  },
+  "dependencies": {
+    "electron-updater": "^5.2.1"
+  }
+}
