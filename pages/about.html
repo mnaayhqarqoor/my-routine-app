@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن الحدث | شهب المنامة 2026</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            padding: 8rem 0 3rem;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            color: var(--gray-text);
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .about-content {
+            padding: 3rem 0;
+        }
+        
+        .about-section {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+        
+        .about-section h2 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .about-section p {
+            color: var(--gray-text);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+            background: var(--darker-bg);
+            border-radius: 15px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            display: block;
+        }
+        
+        .stat-label {
+            color: var(--gray-text);
+            font-size: 1.1rem;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 3rem auto;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
+            width: 3px;
+            height: 100%;
+            background: var(--primary-color);
+        }
+        
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding-left: 50%;
+            position: relative;
+            margin-bottom: 3rem;
+        }
+        
+        .timeline-item:nth-child(even) {
+            justify-content: flex-start;
+            padding-left: 0;
+            padding-right: 50%;
+        }
+        
+        .timeline-content {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 15px;
+            width: 90%;
+            margin: 0 2rem;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
+            width: 20px;
+            height: 20px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            border: 4px solid var(--primary-color);
+        }
+        
+        .timeline-item:nth-child(even) .timeline-dot {
+            right: auto;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before {
+                right: 20px;
+            }
+            
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+                padding-right: 50px;
+                padding-left: 0;
+                justify-content: flex-end;
+            }
+            
+            .timeline-dot,
+            .timeline-item:nth-child(even) .timeline-dot {
+                right: 10px;
+                left: auto;
+                transform: none;
+            }
+            
+            .timeline-content {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="stars-container"></div>
+    
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-meteor"></i>
+                <span>شهب المنامة 2026</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="about.html" class="active">عن الحدث</a></li>
+                <li><a href="schedule.html">الجدول الزمني</a></li>
+                <li><a href="gallery.html">المعرض</a></li>
+                <li><a href="register.html">التسجيل</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>عن الحدث</h1>
+            <div class="breadcrumb">
+                <a href="../index.html">الرئيسية</a>
+                <span>/</span>
+                <span>عن الحدث</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-content">
+        <div class="container">
+            <div class="about-section">
+                <h2>ما هو مهرجان رصد شهب المنامة؟</h2>
+                <p>مهرجان رصد شهب المنامة 2026 هو حدث فلكي سنوي استثنائي يُقام في مملكة البحرين، يجمع عشاق الفلك والهواة والمحترفين لرصد واحدة من أروع الظواهر السماوية - زخة شهب التوأميات.</p>
+                <p>يتميز المهرجان بتوفير تجربة فلكية متكاملة تشمل الرصد المباشر عبر تلسكوبات متطورة، ورش عمل تعليمية، ومحاضرات علمية يقدمها خبراء الفلك، بالإضافة إلى فرص للتصوير الفلكي الاحترافي.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">120+</span>
+                    <span class="stat-label">شهاب في الساعة</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500</span>
+                    <span class="stat-label">مشارك متوقع</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">تلسكوب متطور</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">خبير فلكي</span>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h2>لماذا زخة شهب التوأميات مميزة؟</h2>
+                <p>تُعد زخة شهب التوأميات (Geminids) من أغزر الزخات الشهابية على الإطلاق، حيث تصل معدلاتها إلى 120 شهاباً في الساعة في ذروتها. ما يميز هذه الزخة هو:</p>
+                <ul style="color: var(--gray-text); line-height: 2; margin-right: 2rem;">
+                    <li>شهب ساطعة جداً يمكن رؤيتها بوضوح بالعين المجردة</li>
+                    <li>حركة بطيئة نسبياً تسهل تتبعها وتصويرها</li>
+                    <li>ألوان متعددة تتراوح بين الأبيض والأصفر والأزرق والأخضر</li>
+                    <li>تنشأ من الكويكب 3200 فايثون وليس من مذنب</li>
+                    <li>تظهر في وقت مبكر من الليل مقارنة بزخات أخرى</li>
+                </ul>
+            </div>
+
+            <div class="about-section">
+                <h2>تاريخ الزخات الشهابية</h2>
+                <p>تم توثيق زخة شهب التوأميات لأول مرة في عام 1862، ولكنها أصبحت ظاهرة بارزة فقط في القرن العشرين. منذ ذلك الحين، نمت لتصبح واحدة من أكثر الزخات الشهابية موثوقية وإثارة للإعجاب.</p>
+                <p>الكويكب الأصلي 3200 فايثون اكتشف في عام 1983، وهو يدور حول الشمس كل 1.4 سنة ويقترب من الأرض كل ديسمبر، تاركاً وراءه حطاماً يتفاعل مع الغلاف الجوي للأرض مسبباً الشهب التي نراها.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 style="color: var(--accent-color); margin-bottom: 0.5rem;">1862</h3>
+                        <p style="margin: 0;">أول تسجيل رسمي لزخة شهب التوأميات</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 style="color: var(--accent-color); margin-bottom: 0.5rem;">1983</h3>
+                        <p style="margin: 0;">اكتشاف الكويكب 3200 فايثون المصدر الأصلي للشهب</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 style="color: var(--accent-color); margin-bottom: 0.5rem;">2026</h3>
+                        <p style="margin: 0;">إقامة مهرجان رصد شهب المنامة الأول في البحرين</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h2>ماذا تتوقع في المهرجان؟</h2>
+                <p>سيقدم المهرجان تجربة فلكية شاملة تشمل:</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                    <div style="background: var(--darker-bg); padding: 1.5rem; border-radius: 10px; border: 1px solid rgba(99, 102, 241, 0.2);">
+                        <i class="fas fa-telescope" style="color: var(--accent-color); font-size: 2rem; margin-bottom: 1rem;"></i>
+                        <h4 style="margin-bottom: 0.5rem;">رصد مباشر</h4>
+                        <p style="margin: 0; font-size: 0.9rem;">تلسكوبات متطورة للرصد المباشر للشهب والكواكب</p>
+                    </div>
+                    <div style="background: var(--darker-bg); padding: 1.5rem; border-radius: 10px; border: 1px solid rgba(99, 102, 241, 0.2);">
+                        <i class="fas fa-chalkboard-teacher" style="color: var(--accent-color); font-size: 2rem; margin-bottom: 1rem;"></i>
+                        <h4 style="margin-bottom: 0.5rem;">محاضرات علمية</h4>
+                        <p style="margin: 0; font-size: 0.9rem;">جلسات تعليمية يقدمها خبراء الفلك</p>
+                    </div>
+                    <div style="background: var(--darker-bg); padding: 1.5rem; border-radius: 10px; border: 1px solid rgba(99, 102, 241, 0.2);">
+                        <i class="fas fa-camera" style="color: var(--accent-color); font-size: 2rem; margin-bottom: 1rem;"></i>
+                        <h4 style="margin-bottom: 0.5rem;">ورش تصوير</h4>
+                        <p style="margin: 0; font-size: 0.9rem;">تعليم أسرار التصوير الفلكي الاحترافي</p>
+                    </div>
+                    <div style="background: var(--darker-bg); padding: 1.5rem; border-radius: 10px; border: 1px solid rgba(99, 102, 241, 0.2);">
+                        <i class="fas fa-users" style="color: var(--accent-color); font-size: 2rem; margin-bottom: 1rem;"></i>
+                        <h4 style="margin-bottom: 0.5rem;">فعاليات تفاعلية</h4>
+                        <p style="margin: 0; font-size: 0.9rem;">أنشطة للعائلات والأطفال لمحبي الفلك</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>شهب المنامة 2026</h3>
+                    <p>تجربة فلكية استثنائية تجمع الهواة والمحترفين في حدث سنوي مميز</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="about.html">عن الحدث</a></li>
+                        <li><a href="schedule.html">الجدول الزمني</a></li>
+                        <li><a href="register.html">التسجيل</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تواصل معنا</h3>
+                    <p><i class="fas fa-envelope"></i> info@manamameteors2026.bh</p>
+                    <p><i class="fas fa-phone"></i> +973 1700 0000</p>
+                    <p><i class="fas fa-map-marker-alt"></i> المنامة، مملكة البحرين</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 مهرجان رصد شهب المنامة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
